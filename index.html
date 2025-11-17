@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATK Inventory App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for react-datepicker to integrate with Tailwind */
+        .react-datepicker-wrapper {
+            display: block;
+        }
+        .react-datepicker__input-container input {
+            @apply w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200;
+        }
+        .react-datepicker {
+            @apply shadow-lg rounded-lg border border-gray-200;
+        }
+        .react-datepicker__header {
+            @apply bg-blue-600 text-white p-2 rounded-t-lg;
+        }
+        .react-datepicker__current-month,
+        .react-datepicker__day-name {
+            @apply text-white;
+        }
+        .react-datepicker__navigation--previous,
+        .react-datepicker__navigation--next {
+            @apply !top-3;
+        }
+        .react-datepicker__navigation-icon::before {
+            @apply border-white;
+        }
+        .react-datepicker__day {
+            @apply p-2 rounded-full cursor-pointer hover:bg-blue-200 text-gray-800;
+        }
+        .react-datepicker__day--selected,
+        .react-datepicker__day--keyboard-selected {
+            @apply !bg-blue-500 !text-white;
+        }
+        .react-datepicker__day--outside-month {
+            @apply text-gray-400;
+        }
+        .react-datepicker__month-container {
+            @apply p-2;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "xlsx": "https://aistudiocdn.com/xlsx@^0.18.5",
+    "react-datepicker/": "https://aistudiocdn.com/react-datepicker@^8.9.0/",
+    "react-datepicker": "https://aistudiocdn.com/react-datepicker@^8.9.0",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0"
+  }
+}
+</script>
+</head>
+<body class="bg-gray-100 font-sans antialiased text-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

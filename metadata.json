@@ -1,0 +1,5 @@
+{
+  "name": "ATK Inventory App",
+  "description": "A simple React application for managing office supplies (ATK) inventory, including recording incoming/outgoing items and generating filterable transaction reports with Excel export.",
+  "requestFramePermissions": []
+}
